@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolbar Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button onclick="formatText('bold')"><b>B</b></button>
+        <button onclick="formatText('italic')"><i>I</i></button>
+        <button onclick="formatText('underline')"><u>U</u></button>
+        <input type="color" id="textColor" onchange="changeColor()">
+        <select id="textSize" onchange="changeSize()">
+            <option value="1">Small</option>
+            <option value="3" selected>Medium</option>
+            <option value="5">Large</option>
+        </select>
+    </div>
+    <div contenteditable="true" class="text-area">
+        Type your text here...
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
